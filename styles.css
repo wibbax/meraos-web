@@ -1,0 +1,89 @@
+body {
+    background-color: #ffffff;
+    color: #7a557f;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFEBF1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-width: 80px;
+    margin-left: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.sliderfemenino,
+.slidermasculino {
+    overflow: hidden;
+    display: flex; /* Añadido: asegura que el slider sea un contenedor flexible */
+}
+
+.sliderfemenino img,
+.slidermasculino img {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.custom-prev,
+.custom-next {
+    font-size: 24px;
+    cursor: pointer;
+    color: #7a557f;
+}
+
+.custom-separator {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 80%;
+    background-color: #7a557f; 
+    margin: 0 10px;
+}
+
+.custom-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #7a557f; 
+    background-color: #ffffff; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    flex: 0 0 auto; /* Añadido: establece el tamaño de los elementos del slider */
+}
